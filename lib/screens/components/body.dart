@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:new_grazac_challenge_1/constants.dart';
+import 'package:new_grazac_challenge_1/screens/bank_home_screen.dart';
 import 'package:new_grazac_challenge_1/screens/components/splash_content.dart';
 import 'package:new_grazac_challenge_1/size_config.dart';
 
@@ -96,7 +97,11 @@ class _BodyState extends State<Body> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(7),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              var screen = BankHomeScreen();
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => screen));
+                            },
                             child: Text(
                               'Already have an account? Log in',
                               style: TextStyle(

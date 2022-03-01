@@ -5,3 +5,4 @@ const kSecondaryColor = Color(0XFFFFF999);
 const kTextColor = Color(0xFF757575);
 const kAnimationDuration = Duration(milliseconds: 200);
 const anotherColor = Color(0xFFD8D8D8);
+const tertiaryColor = Color(0x00000000);
